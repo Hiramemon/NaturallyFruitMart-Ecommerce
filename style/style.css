@@ -1,11 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Jost", sans-serif;
-    /* font-family: "Roboto", sans-serif;  */
-
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  /* font-family: "Roboto", sans-serif;  */
 }
+
+/*for top searching*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+.top-header:hover {
+  color: #364a15;
+}
+
+.nav-link-1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(78, 78, 78);
+}
+.nav-link-1:hover {
+  color: #6e8a3c;
+}
+
+.heart-icon:hover {
+  color: white;
+  border: none;
+  background-color: #364a15;
+}
+
+.dropdown-item:hover {
+  background-color: #364a15;
+  color: azure;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.modal-cart {
+  position: absolute;
+  top: 119px;
+  right: 13%;
+  width: 400px;
+}
+
+.modal-cart-2 {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+}
+
+/*end header section*/
