@@ -9,56 +9,28 @@
 }
 
 /*for top searching*/
-header {
-  position: static;
-  top: 0;
-  width: 100%;
-  z-index: 1100;
-}
-
 .top-header:hover {
-  color: #364a15;
+  color: darkseagreen;
 }
 
-.nav-link-1 {
-  font-size: 18px;
-  font-weight: 500;
-  color: rgb(78, 78, 78);
+.card-clr{
+color: darkgrey;
 }
-.nav-link-1:hover {
-  color: #6e8a3c;
-}
-
 .heart-icon:hover {
-  color: white;
-  border: none;
-  background-color: #364a15;
+color: white;
+border: none;
+background-color: #364a15;
 }
 
 .dropdown-item:hover {
-  background-color: #364a15;
-  color: azure;
+  background-color: rgb(255, 255, 255);
+  color: darkseagreen;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+display: block;
 }
 
 .dropdown-toggle::after {
-  display: none;
-}
-
-.modal-cart {
-  position: absolute;
-  top: 119px;
-  right: 13%;
-  width: 400px;
-}
-
-.modal-cart-2 {
-  position: absolute;
-  top: 100px;
-  right: 5%;
-}
-
-/*end header section*/
+display: none;
+}  
