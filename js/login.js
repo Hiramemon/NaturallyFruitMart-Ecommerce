@@ -1,31 +1,13 @@
- // Handling form submission
- document.getElementById('login-form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-    const email = document.getElementById('login-email').value;
-    const password = document.getElementById('login-password').value;
-    const loginError = document.getElementById('login-error');
+document.getElementById('login').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let storedUser = JSON.parse(localStorage.getItem('user'));
 
-    loginError.innerText = ''; // Clear previous error messages
-
-    // Get users from local storage
-    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-
-    // Check if email exists
-    if (!existingUsers.includes(email)) {
-        loginError.innerText = "This email is not registered. Please sign up.";
-        return; // Exit function if email does not exist
+    if (storedUser && storedUser.email === email && storedUser.password === password) {
+        alert('Login Successful!');
+        window.location.href = 'index.html';
+    } else {
+        alert('Invalid email or password!');
     }
-
-    // Check if the password is correct
-    const storedPassword = localStorage.getItem(email); // Get stored password using email as key
-    if (storedPassword !== password) {
-        loginError.innerText = "Incorrect password. Please try again.";
-        return; // Exit function if password is incorrect
-    }
-
-    // If login is successful
-    document.getElementById('login-message').innerText = "Login Successful for " + email;
-
-    // Redirect to main page
-    window.location.href = 'http://127.0.0.1:5501/index.html'; // Replace 'main.html' with your main page URL
 });

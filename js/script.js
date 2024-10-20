@@ -11,24 +11,24 @@ const cartTotalItems = document.getElementById('cart-total-items');
 document.querySelectorAll('.add-to-cart-btn').forEach(button => {
     button.addEventListener('click', function() {
         const productName = this.getAttribute('data-name');
-        let productPrice = this.getAttribute('data-price'); // Get price as string
+        let productPrice = this.getAttribute('data-price'); 
 
-        // Remove the $ sign if it exists and convert to float
+        // Remove the $ 
         productPrice = parseFloat(productPrice.replace('$', ''));
 
         const productImg = this.getAttribute('data-img');
 
-        // Check if the product is already in the cart
+        // product is already in the cart
         const existingProductIndex = cart.findIndex(item => item.name === productName);
 
         if (existingProductIndex !== -1) {
-            // Product already in cart, prevent adding again
+            // Product already in cart,
             alert(`${productName} is already in your cart.`);
         } else {
             // Add product to cart array
             cart.push({ name: productName, price: productPrice, img: productImg });
             totalPrice += productPrice;
-            updateCart(); // Update the cart only when a new item is added
+            updateCart(); 
         }
     });
 });
@@ -61,13 +61,13 @@ function updateCart() {
     cartTotalItems.textContent = cart.length; // Update total items count
 
 
-    // Attach event listener for removing items
+    
     document.querySelectorAll('.remove-item-btn').forEach(button => {
         button.addEventListener('click', function() {
             const index = parseInt(this.getAttribute('data-index'));
             totalPrice -= cart[index].price; // Reduce the total price
-            cart.splice(index, 1); // Remove the item from the cart
-            updateCart(); // Re-render the cart
+            cart.splice(index, 1); // Remove the item
+            updateCart(); 
         });
     });
 
