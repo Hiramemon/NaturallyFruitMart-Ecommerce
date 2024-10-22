@@ -10,4 +10,4 @@ document.getElementById('login').addEventListener('submit', function(event) {
     } else {
         alert('Invalid email or password!');
     }
-});
+}); 
