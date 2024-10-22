@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   font-family: "Jost", sans-serif;
-
 }
 
 /*for top searching*/
@@ -13,13 +12,13 @@
   color: darkseagreen;
 }
 
-.card-clr{
-color: darkgrey;
+.card-clr {
+  color: darkgrey;
 }
 .heart-icon:hover {
-color: white;
-border: none;
-background-color: #364a15;
+  color: white;
+  border: none;
+  background-color: #364a15;
 }
 
 .dropdown-item:hover {
@@ -28,9 +27,9 @@ background-color: #364a15;
 }
 
 .dropdown:hover .dropdown-menu {
-display: block;
+  display: block;
 }
 
 .dropdown-toggle::after {
-display: none;
-}  
+  display: none;
+}
