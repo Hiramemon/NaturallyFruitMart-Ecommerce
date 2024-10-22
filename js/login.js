@@ -10,7 +10,7 @@ document.getElementById("login").addEventListener("submit", function (event) {
     storedUser.password === password
   ) {
     alert("Login Successful!");
-    window.location.href = "index.html";
+    window.location.href = "/pages/products/products.html";
   } else {
     alert("Invalid email or password!");
   }
